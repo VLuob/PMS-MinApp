@@ -1,0 +1,274 @@
+/* pages/user/user.wxss */
+
+/* 选项卡 start */
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 54rpx;
+  line-height: 54rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  margin-top:20rpx;
+}
+
+.swiper-tab-item {
+  width: 30%;
+  color: #434343;
+  font: 28rpx "";
+}
+
+.active {
+  color: #39a9ff;
+  border-bottom: 4rpx solid #39a9ff;
+}
+
+/* 选项卡 end */
+
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+.bg .surface .add image {
+  height: 50rpx;
+  width: 96rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 20rpx;
+}
+
+.bg .surface .title {
+  display: flex;
+  padding-left: 74rpx;
+  font: 600 26rpx "";
+  color: #333;
+  margin: 25rpx 0;
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+}
+
+.bg .surface .title .num {
+  margin: 0 130rpx 0 100rpx;
+}
+
+.bg .surface .content {
+  display: flex;
+  padding-left: 74rpx;
+  font: 24rpx "";
+  color: #333;
+  position: relative;
+  height: 55rpx;
+}
+
+.bg .surface .content .nam {
+  position: absolute;
+}
+
+.bg .surface .content .phone {
+  position: absolute;
+  left: 230rpx;
+}
+
+.bg .surface .content .position {
+  position: absolute;
+  right: 223rpx;
+}
+
+.bg .surface .content .img image {
+  height: 36rpx;
+  width: 36rpx;
+  position: absolute;
+  right: 80rpx;
+  top: 0rpx;
+}
+
+.bg .surface .btn {
+  position: absolute;
+  left: 30%;
+  bottom: 40rpx;
+  height: 64rpx;
+  width: 300rpx;
+  background: #39a9ff;
+  border-radius: 29rpx;
+  font: 26rpx "";
+  color: #fff;
+}
+
+.adduser {
+  height: 458rpx;
+  width: 540rpx;
+  background: #fff;
+  position: relative;
+  z-index: 99999999;
+  left: 105rpx;
+  top: 50rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.adduser .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.adduser .title image {
+  height: 28rpx;
+  width: 28rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+}
+
+.adduser .title text {
+  margin: 40rpx 0;
+  font: 30rpx "";
+  color: #333;
+}
+
+.adduser .name {
+  display: flex;
+  position: relative;
+}
+
+.adduser .name.phone {
+  margin: 20rpx 0;
+}
+
+.adduser .name input {
+  width: 253rpx;
+  height: 54rpx;
+  background: #f6f6f6;
+  position: absolute;
+  left: 181rpx;
+  font: 24rpx "";
+  color: #666;
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  padding-left: 19rpx;
+}
+
+.adduser .name .input {
+  width: 253rpx;
+  height: 46rpx;
+  background: #f6f6f6;
+  position: absolute;
+  left: 181rpx;
+  font: 24rpx "";
+  color: #666;
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  padding-left: 19rpx;
+  line-height: 46rpx;
+}
+
+.adduser .name text {
+  font: 26rpx/2 "";
+  color: #333;
+  margin-left: 96rpx;
+}
+
+.adduser button {
+  height: 64rpx;
+  width: 220rpx;
+  background: #39a9ff;
+  border-radius: 29rpx;
+  font: 26rpx "";
+  color: #fff;
+  margin-top: 61rpx;
+}
+
+.delete {
+  height: 370rpx;
+  width: 540rpx;
+  background: #fff;
+  position: relative;
+  z-index: 9999999999;
+  left: 105rpx;
+  top: 50rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.delete .title image {
+  height: 28rpx;
+  width: 28rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+}
+
+.delete .title text {
+  margin: 40rpx 0;
+  font: 550 30rpx "";
+  color: #333;
+}
+
+.delete .line {
+  height: 110rpx;
+  width: 420rpx;
+  border: 2rpx dashed #ccc;
+  margin: 0 auto;
+  padding: 0 27rpx;
+}
+
+.delete .line .txt {
+  display: flex;
+  justify-content: space-between;
+  font: 20rpx "";
+  color: #333;
+}
+
+.delete .line .txt text {
+  margin: 21rpx 0 20rpx;
+}
+
+.delete .line .info {
+  position: relative;
+  font: 20rpx "";
+  color: #333;
+}
+
+.delete .line .info .num {
+  position: absolute;
+  left: 180rpx;
+}
+
+.delete .line .info .user {
+  position: absolute;
+  left: 380rpx;
+}
+
+.delete .btn {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.delete .btn button {
+  height: 58rpx;
+  width: 180rpx;
+  border-radius: 29rpx;
+  font: 24rpx "";
+  color: #666;
+}
+
+.delete .btn button:nth-child(2) {
+  background: #ed4b57;
+  color: #fff;
+}

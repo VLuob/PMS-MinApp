@@ -1,0 +1,124 @@
+/* pages/mine/mine.wxss */
+
+.bg .surface .icon {
+  height: 170rpx;
+  width: 143rpx;
+  margin: 0rpx auto 35rpx;
+  background:#eee;
+}
+
+.bg .surface .table {
+  position: relative;
+  font: 24rpx "";
+  color: #333;
+  margin-bottom: 26rpx;
+}
+
+.bg .surface .table_information {
+  position: absolute;
+  left: 176rpx;
+  font: 20rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: Regular;
+  color: #333;
+}
+
+.bg .surface .radio {
+  position: relative;
+  font: 24rpx "";
+  color: #333;
+  margin-bottom: 30rpx;
+  display: flex;
+}
+
+.bg .surface .radio .normal {
+  position: absolute;
+  left: 176rpx;
+  display: flex;
+}
+
+.bg .surface .radio .normal .radio_circle {
+  height: 40rpx;
+  width: 40rpx;
+  border: 2rpx solid #666;
+  border-radius: 50%;
+}
+
+.bg .surface .radio .radio_txt {
+  font: 22rpx/34rpx "";
+  color: #333;
+  margin: 3rpx 0 0 26rpx;
+}
+
+.bg .surface .radio .unnormal {
+  position: absolute;
+  left: 340rpx;
+  display: flex;
+}
+
+.bg .surface .radio .unnormal .radio_circle {
+  height: 40rpx;
+  width: 40rpx;
+  border: 2rpx solid #666;
+  border-radius: 50%;
+}
+
+.bg .surface .radio .state {
+  position: absolute;
+  top: 60rpx;
+  left: 176rpx;
+  display: flex;
+}
+
+.bg .surface .radio .state_suspected {
+  display: flex;
+}
+
+.bg .surface .radio .state_suspected .suspected_radio {
+  height: 40rpx;
+  width: 40rpx;
+  border: 2rpx solid #666;
+  border-radius: 50%;
+}
+
+
+
+.bg .surface .radio .state_suspected .suspected_txt {
+  font: 22rpx/34rpx "";
+  color: #333;
+  margin: 3rpx 0 0 26rpx;
+}
+
+
+.bg .surface .radio .state_suspected.diagnosis {
+  margin-left: 15rpx;
+}
+
+
+
+.bg .surface .door {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg .surface .door .release {
+  height: 64rpx;
+  width: 220rpx;
+  background: #39a9ff;
+  border-radius: 29rpx;
+  font: 24rpx "";
+  color: #fff;
+}
+
+.bg .surface .door .unrelease {
+  height: 64rpx;
+  width: 220rpx;
+  background: #ed4b57;
+  border-radius: 29rpx;
+  font: 24rpx "";
+  color: #fff;
+}
+.radio-group1:nth-child(1){
+  margin-right:50rpx;
+}

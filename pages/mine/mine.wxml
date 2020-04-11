@@ -1,0 +1,98 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="top" >
+  <view class="box" bindtap="gobackChange">
+  <image src="/images/goback.png" class="top_icon" />
+</view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="icon">
+      <image style="height:100%;width:100%;"  src="{{imageUrl}}"/>
+    </view>
+    <view style="margin-left:50rpx;">
+      <view class="table">
+        <text>姓名</text>
+        <text class="table_information">{{name}}1</text>
+      </view>
+      <view class="table">
+        <text>性别</text>
+        <text class="table_information">{{gender}}</text>
+      </view>
+      <view class="table">
+        <text>手机号</text>
+        <text class="table_information">{{phone}}</text>
+      </view>
+      <view class="table">
+        <text>证件类型</text>
+        <text class="table_information">{{type}}</text>
+      </view>
+      <view class="table">
+        <text>身份证号</text>
+        <text class="table_information">{{identity}}</text>
+      </view>
+      <view class="table">
+        <text>户籍地区</text>
+        <text class="table_information">{{province}}-{{city}}-{{district}}</text>
+      </view>
+      <view class="table">
+        <text>来源地区</text>
+        <text class="table_information">{{sourceProvince}}-{{sourceCity}}-{{sourceDistrict}}</text>
+      </view>
+      <view class="table">
+        <text>抵达时间</text>
+        <text class="table_information">{{arriveDate}}</text>
+      </view>
+      <view class="table">
+        <text>物业名称</text>
+        <text class="table_information">{{realEstateName}}</text>
+      </view>
+      <view class="table">
+        <text>地址</text>
+        <text class="table_information">{{address}}{{room}}</text>
+      </view>
+      <view class="radio">
+        <text>体温状态</text>
+        <view class="normal" bindtap="normalChange">
+          <image class="radio_circle" src="{{normal}}" />
+          <view class="radio_txt">正常</view>
+        </view>
+        <view class="unnormal" bindtap="unnormalChange">
+          <image class="radio_circle" src="{{unnormal}}" />
+          <view class="radio_txt">不正常</view>
+        </view>
+      </view>
+      <view class="radio">
+        <text>状态分类</text>
+        <view></view>
+        <view class="normal"  bindtap="n1Change">
+          <image class="radio_circle" src="{{n1}}" />
+          <view class="radio_txt">正常用户</view>
+        </view>
+        <view class="unnormal"  bindtap="n2Change">
+          <image class="radio_circle quarantine" src="{{n2}}" />
+          <view class="radio_txt">隔离观察</view>
+        </view>
+        <view class="state">
+          <view class="state_suspected"  bindtap="n3Change">
+            <image class="suspected_radio" src="{{n3}}" />
+            <view class="suspected_txt">疑似病例</view>
+          </view>
+          <view class="state_suspected diagnosis"  bindtap="n4Change">
+            <image class="suspected_radio" src="{{n4}}" />
+            <view class="suspected_txt">确诊送医</view>
+          </view>
+        </view>
+      </view>
+      <view class="table" style="margin-top:100rpx;">
+        <text>隔离时间</text>
+        <text class="table_information">14天后结束</text>
+      </view>
+    </view>
+    <view class="door">
+      <button class="release">放行</button>
+      <button class="unrelease">不放行</button>
+    </view>
+  </view>
+
+</view>

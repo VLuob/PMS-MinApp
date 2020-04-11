@@ -1,0 +1,22 @@
+<!--pages/verification/verification.wxml-->
+<view class="head">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/go.png" class="top_icon" />
+  </view>
+</view>
+<view class="main">
+  <image src="/images/logo.png" class="logo" />
+  <view class="work">工作人员
+    <text>身份验证</text>
+  </view>
+  <button class="btn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">点击获取授权</button>
+  <view bindtap="test" style="margin-top:20rpx;">演示入口</view>
+  <view class="txt">
+    <view>技术支持:
+      <text>上海畅客科技有限公司</text>
+    </view>
+    <view>热线电话:
+      <text>400-920-2030</text>
+    </view>
+  </view>
+</view>

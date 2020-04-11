@@ -1,0 +1,47 @@
+/**app.wxss**/
+
+.top {
+  background: #39a9ff;
+  height: 128rpx;
+  display: flex;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+}
+.top .box .top_icon {
+  height: 31rpx;
+  width: 18rpx;
+  margin: 80rpx 10rpx 0 25rpx;
+}
+
+.top .box{width:100rpx;}
+
+.bg {
+  background: #39a9ff;
+  height: 210rpx;
+  border-radius: 0 0 60rpx 60rpx;
+}
+
+.bg .surface {
+  height: 1150rpx;
+  width: 700rpx;
+  margin: 0 auto;
+  box-shadow: 0rpx 0rpx 15rpx rgba(34, 34, 34, 0.16);
+  background: #fff;
+  padding-top: 30rpx;
+  border-radius: 30rpx;
+  position: relative;
+  top:7rpx;
+}
+
+.bg  .people {
+  font: 600 30rpx "";
+  text-align: center;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.bg .surface .line {
+  width: 606rpx;
+  border: 1rpx dashed #ccc;
+  margin: 0 auto;
+}

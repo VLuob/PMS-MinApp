@@ -1,0 +1,29 @@
+<!--pages/PropertyInformation/propertyinformation.wxml-->
+<view class="top">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="people">物业信息</view>
+    <view class="line"></view>
+    <view class="name">
+      <view>物业名称：{{name||"物业名称"}}</view>
+      <view>所在地：{{region1||"省-市-区/县"}}-{{street ||"街道"}}</view>
+    </view>
+    <view class="img">
+      <image src="/images/sweepcode.png" />
+    </view>
+    <button bindtap="getScancode">扫描二维码</button>
+    <view class="txt">
+      <view>技术支持:
+        <text>上海畅客科技有限公司</text>
+      </view>
+      <view>热线电话:
+        <text>400-920-2030</text>
+      </view>
+    </view>
+
+  </view>
+</view>

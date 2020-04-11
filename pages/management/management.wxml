@@ -1,0 +1,33 @@
+<!--pages/management/management.wxml-->
+
+<view class="top">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="people">楼层管理</view>
+    <view class="line"></view>
+    <view class="floor">
+      <view>楼号</view>
+      <view class="layer">该栋总层数</view>
+      <view>每层户数</view>
+    </view>
+    <block wx:for="{{floors}}" wx:key="index">
+      <view class="tung">
+        <view class="text">{{floors[index].id}}栋</view>
+        <view>
+          <input value='{{item.floor}}' bindinput="floorChange" data-index='{{index}}' />
+        </view>
+        <view>
+          <input value='{{item.room}}' bindinput="roomChange" data-index='{{index}}' />
+        </view>
+      </view>
+    </block>
+    <view class="sub">
+      <button class="up" bindtap="lastChange">上一步</button>
+      <button class="sure" bindtap="clickChange">确定</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/owner/owner",
+    "pages/management/management",
+    "pages/user/user",
+    "pages/SucessShow/sucessshow",
+    "pages/EstateManagement/estatemanagement",
+    "pages/verification/verification",
+    "pages/success/success",
+    "pages/mine/mine",
+    "pages/floor/floor",
+    "pages/PropertyInformation/propertyinformation",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

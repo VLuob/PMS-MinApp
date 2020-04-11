@@ -1,0 +1,59 @@
+/**index.wxss**/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .logo {
+  width: 314rpx;
+  height: 292rpx;
+  margin-top: 238rpx;
+}
+
+.main .identity {
+  font: 26rpx "";
+  color: #333;
+  margin: 90rpx 0 29rpx;
+  font-weight: bold;
+}
+
+.main .owner {
+  height: 70rpx;
+  width: 360rpx;
+  background: #39a9ff;
+  border-radius: 50rpx;
+  font: 26rpx "";
+  color: #fff;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+  text-align: center;
+}
+
+.main .guard {
+  height: 70rpx;
+  width: 360rpx;
+  background: #0bbe63;
+  border-radius: 50rpx;
+  font: 26rpx/70rpx "";
+  color: #fff;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+  text-align: center;
+  margin: 40rpx 0;
+}
+
+.main .property {
+  height: 70rpx;
+  width: 360rpx;
+  background: #ed4b57;
+  border-radius: 50rpx;
+  font: 26rpx/70rpx "";
+  color: #fff;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+  text-align: center;
+}
+.main .company{position:absolute;bottom:120rpx;font:22rpx/2 "";color:#333;}

@@ -1,0 +1,244 @@
+/* pages/ovner/owner.wxss */
+
+.delete-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.bg .surface .name {
+  font: 24rpx "";
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.bg .surface .name input {
+  background: #f6f6f6;
+  padding-left: 20rpx;
+  width: 176rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 154rpx;
+}
+
+.bg .surface .name .gender {
+  display: flex;
+  position: absolute;
+  left: 154rpx;
+  align-items: center;
+}
+
+.bg .surface .name .gender image {
+  height: 40rpx;
+  width: 40rpx;
+  border: 2rpx solid #666;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.bg .surface .name .gender view {
+  font: 24rpx "";
+  color: #333;
+  margin-right: 10rpx;
+}
+
+.bg .surface .name .radio-group {
+  position: absolute;
+  left: 146rpx;
+}
+
+.bg .surface .name .radio-group radio {
+  height: 34rpx;
+  width: 34rpx;
+  padding-right: 25rpx;
+}
+
+.bg .surface .phone {
+  height: 50rpx;
+  display: flex;
+  font: 24rpx/50rpx "";
+  color: #333;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.bg .surface .phone view {
+  display: flex;
+}
+
+.bg .surface .phone .phonenum input {
+  display: flex;
+  background: #f6f6f6;
+  padding-left: 20rpx;
+  width: 180rpx;
+  height: 50rpx;
+  box-sizing: border-box;
+  margin: 0 20rpx 0 43rpx;
+}
+
+.bg .surface .name .iptphone {
+  background: #f6f6f6;
+  position: absolute;
+  left: 155rpx;
+  height: 50rpx;
+  padding-left: 20rpx;
+  width: 492rpx;
+}
+
+.select-wrap {
+  width: 176rpx;
+  margin-left: 60rpx;
+}
+
+.bg .surface .region {
+  font: 24rpx "";
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.bg .surface .region view {
+  height: 50rpx;
+}
+
+.bg .surface .region .register_select {
+  width: 176rpx;
+  margin-left: 17rpx;
+}
+
+.bg .surface .region .register_city {
+  width: 176rpx;
+  position: absolute;
+  left: 300rpx;
+  top: 0rpx;
+}
+
+.bg .surface .region .register_county {
+  width: 176rpx;
+  position: absolute;
+  left: 103rpx;
+  top: 67rpx;
+}
+
+.bg .surface .region.from {
+  font: 24rpx "";
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-top: 90rpx;
+  position: relative;
+}
+
+.bg .surface .time {
+  position: relative;
+  top: 90rpx;
+  font: 24rpx "";
+  color: #333;
+  display: flex;
+}
+
+.bg .surface  .picker {
+  height: 50rpx;
+  width: 176rpx;
+  background: #f6f6f6;
+  border-radius: 6rpx;
+  margin-left: 20rpx;
+  padding-left: 21rpx;
+  line-height: 46rpx;
+  box-sizing: border-box;
+}
+
+.bg .surface  .picker.area {
+  position: absolute;
+  top: 68rpx;
+}
+
+.bg .surface  .picker.city {
+  position: absolute;
+  top: 0;
+  left: 290rpx;
+}
+
+.bg .surface .time .time_txt {
+  padding-top: 6rpx;
+}
+
+.bg .surface .time .select-time {
+  width: 176rpx;
+  margin-left: 17rpx;
+}
+
+.bg .surface .property {
+  position: relative;
+  top: 110rpx;
+  font: 24rpx "";
+  display: flex;
+  color: #333;
+}
+
+.bg .surface .property .time_txt {
+  padding-top: 6rpx;
+}
+
+.bg .surface .property .select-time {
+  width: 176rpx;
+  margin-left: 17rpx;
+}
+
+.bg .surface .property.adress {
+  position: relative;
+  top: 130rpx;
+  font: 24rpx "";
+  display: flex;
+  color: #333;
+}
+
+.bg .surface .property.adress .select-time {
+  width: 176rpx;
+  margin-left: 60rpx;
+}
+
+.bg .surface .property.adress .ipt {
+  background: #f6f6f6;
+  padding-left: 20rpx;
+  width: 176rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 300rpx;
+}
+
+.bg .surface .pic {
+  position: relative;
+  top: 160rpx;
+  font: 24rpx "";
+  display: flex;
+  color: #333;
+}
+
+.bg .surface .pic .img {
+  height: 120rpx;
+  width: 120rpx;
+ left:115rpx;
+  position: absolute;
+}
+
+.btn {
+  position: absolute;
+  bottom: 40rpx;
+  width: 300rpx;
+  height: 64rpx;
+  left:0;
+  right:0;
+  border-radius: 50rpx;
+  font: 24rpx "";
+  background: #39a9ff;
+  color: #fff;
+}

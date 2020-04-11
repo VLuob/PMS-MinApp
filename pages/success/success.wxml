@@ -1,0 +1,21 @@
+<!--pages/success/success.wxml-->
+<view class="top">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="people">设置成功</view>
+    <view class="line"></view>
+    <view>
+      <view class="success">
+        <view class="icon">
+          <image src="/images/success.png" />
+        </view>
+        <text>恭喜您,设置成功!</text>
+        <button bindtap='backChange'>确定</button>
+      </view>
+    </view>
+  </view>
+</view>

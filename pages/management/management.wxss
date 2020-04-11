@@ -1,0 +1,55 @@
+/* pages/management/management.wxss */
+
+.bg .surface .floor {
+  display: flex;
+  justify-content: space-around;
+  font: 24rpx "";
+  color: #333;
+  margin: 31rpx auto 18rpx;
+}
+
+.bg .surface .floor .layer {
+  margin-left: 40rpx;
+}
+
+.bg .surface .tung {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+
+.bg .surface .tung view {
+  height: 54rpx;
+  width: 156rpx;
+  background: #f6f6f6;
+  position: relative;
+  font: 26rpx/46rpx "";
+  color: #333;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.bg .surface .sub {
+  position: absolute;
+  bottom: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bg .surface .sub button {
+  height: 64rpx;
+  width: 220rpx;
+  border-radius: 29rpx;
+  text-align: center;
+  font: 26rpx "";
+  color: #fff;
+}
+
+.bg .surface .sub .up {
+  background: #39a9ff;
+}
+
+.bg .surface .sub .sure {
+  background: #0bbe63;
+}

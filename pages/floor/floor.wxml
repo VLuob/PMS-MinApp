@@ -1,0 +1,28 @@
+<!--pages/floor/floor.wxml-->
+<view class="top" >
+  <view class="box" bindtap="gobackChange">
+  <image src="/images/goback.png" class="top_icon" />
+</view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <form bindsubmit='searchBox'>
+      <view class="people">楼层管理</view>
+      <view class="line"></view>
+      <view class="management">
+        <view class="txt">设置园区总栋数</view>
+        <view class="floor">
+          <view class="down" bindtap="downChange">
+            <image src="/images/down.png" />
+          </view>
+          <input class="ipt" name="floor" type="number" bindinput="box" value="{{value}}" disabled="{{isDisabled}}" />
+          <view class="up" bindtap="upChange">
+            <image src="/images/up.png" />
+          </view>
+        </view>
+        <button class="btn" form-type='submit'>下一步</button>
+      </view>
+    </form>
+  </view>
+
+</view>

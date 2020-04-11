@@ -1,0 +1,45 @@
+/* pages/floor/floor.wxss */
+
+.bg .surface .management {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.bg .surface .management .txt {
+  font: 26rpx "";
+  color: #333;
+  margin: 98rpx 0 41rpx;
+  font-weight: Medium;
+  font-family: PingFang-SC-Medium;
+}
+
+.bg .surface .management .floor {
+  display: flex;
+}
+
+.bg .surface .management .floor image {
+  height: 54rpx;
+  width: 54rpx;
+}
+
+.bg .surface .management .floor .ipt {
+  height: 54rpx;
+  width: 200rpx;
+  background: #f6f6f6;
+  margin: 0 20rpx;
+text-align: center;
+  font: 24rpx "";
+  color: #333;
+}
+
+.bg .surface .btn {
+  height: 64rpx;
+  width: 300rpx;
+  border-radius: 29rpx;
+  background: #39a9ff;
+  font: 26rpx "";
+  color: #fff;
+  margin-top: 100rpx;
+}

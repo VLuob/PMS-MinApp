@@ -1,0 +1,20 @@
+<!--pages/SucessShow/sucessshow.wxml-->
+<view class="top">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <image src="{{img}}" class="qrcode" />
+    <text>{{content.title1}}</text>
+    <text>{{content.title2}}</text>
+    <button bindtap="goChange">{{content.btn}}</button>
+    <view class="in">
+      <view>{{content.in}}：2020-2-3 21:00</view>
+      <view>{{content.leave}}：2020-2-3 20:00</view>
+
+    </view>
+  </view>
+
+</view>

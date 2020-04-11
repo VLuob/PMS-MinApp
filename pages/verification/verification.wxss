@@ -1,0 +1,68 @@
+/* pages/verification/verification.wxss */
+
+.head {
+
+  height: 128rpx;
+  display: flex;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+}
+
+.head .top_icon {
+  height: 31rpx;
+  width: 18rpx;
+  margin: 71rpx 15rpx 0 35rpx;
+}
+
+.head text {
+  font-size: 32rpx;
+  color: #333;
+  margin-top: 65rpx;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .logo {
+  width: 314rpx;
+  height: 292rpx;
+  margin-top: 238rpx;
+}
+
+.main .work {
+  font: 30rpx;
+  font-weight: Bold;
+  font-family: PingFang-SC-Bold;
+  color: #333;
+  margin: 106rpx 0 51rpx;
+}
+
+.main .work text {
+  margin-left: 10rpx;
+}
+
+.btn {
+  width: 100rpx;
+  height: 70rpx;
+  font:700 30rpx "";
+  color: #fff;
+  background: #39a9ff;
+  border-radius: 6rpx;
+  text-align: center;
+}
+
+.main .txt {
+  position: absolute;
+  bottom: 120rpx;
+  font: 22rpx/2 "";
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+}
+
+.main .txt text {
+  margin-left: 5rpx;
+}

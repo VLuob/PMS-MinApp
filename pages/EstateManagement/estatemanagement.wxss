@@ -1,0 +1,220 @@
+/* pages/EstateManagement/estatemanagement.wxss */
+
+.bg .surface .modify image {
+  height: 50rpx;
+  width: 96rpx;
+  position: absolute;
+  top: -100rpx;
+  right: 47rpx;
+}
+
+.bg .surface .line {
+  width: 606rpx;
+  border: 1rpx dashed #ccc;
+  margin: 0 auto;
+}
+
+.bg .surface .name {
+  font: 24rpx/2 "";
+  color: #333;
+  font-weight: Bold;
+  font-family: PingFang-SC-Bold;
+  margin: 31rpx 0 0 45rpx;
+}
+
+.bg .surface image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 124rpx auto 70rpx;
+}
+
+.bg .surface .txt {
+  position: absolute;
+  bottom: 120rpx;
+  font: 22rpx/2 "";
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+  left: 25%;
+}
+
+.bg .surface .user {
+  height: 70rpx;
+  width: 360rpx;
+  border-radius: 35rpx;
+  background: #39a9ff;
+  font: 26rpx "";
+  color: #fff;
+  letter-spacing: 10 rpx;
+  margin-top: 49rpx;
+}
+
+.bg .surface .cavas {
+  height: 800rpx;
+  width: 600rpx;
+  position: absolute;
+  top: 230rpx;
+  z-index: 99999999999;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  box-shadow: 0 0 25rpx #000;
+}
+
+.bg .surface .cavas .back {
+  border-radius: 30rpx;
+  width: 600rpx;
+  height: 100%;
+  position: absolute;
+  top: -120rpx;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.bg .surface .cavas text {
+  color: #000;
+  font: 700 30rpx "";
+  position: absolute;
+  bottom: 100rpx;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bg .surface .floor {
+  height: 70rpx;
+  width: 360rpx;
+  border-radius: 35rpx;
+  background: #0bbe63;
+  font: 26rpx "";
+  color: #fff;
+  letter-spacing: 10 rpx;
+  margin-top: 214rpx;
+}
+
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 99999;
+}
+
+.model {
+  height: 500rpx;
+  width: 540rpx;
+  background: #fff;
+  position: relative;
+  z-index: 9999999999;
+  left: 105rpx;
+  top: 50rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.model .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.model .title image {
+  height: 28rpx;
+  width: 28rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 40rpx;
+}
+
+.model .title text {
+  margin: 40rpx 0;
+  font: 550 30rpx "";
+  color: #333;
+}
+
+.model .property {
+  display: flex;
+  padding: 0 57rpx;
+  margin-bottom: 20rpx;
+}
+
+.model .property input {
+  height: 46rpx;
+  width: 300rpx;
+  background: #f6f6f6;
+  font: 24rpx "";
+  color: #000;
+  padding-left: 19rpx;
+  margin-left: 31rpx;
+  box-sizing: border-box;
+}
+
+.model .property text {
+  font: 24rpx/2 "";
+  color: #333;
+}
+
+.model .city {
+  display: flex;
+  position: relative;
+  padding: 0 57rpx;
+}
+
+.model .city text {
+  font: 24rpx "";
+  color: #333;
+}
+
+.model .city .box {
+  margin-left: 55rpx;
+}
+
+.model .city .input {
+  height: 46rpx;
+  width: 140rpx;
+  background: #f6f6f6;
+  font: 24rpx "";
+  color: #666;
+  padding-left: 18rpx;
+  box-sizing: border-box;
+  line-height: 46rpx;
+}
+
+.model .city input {
+  height: 46rpx;
+  width: 140rpx;
+  background: #f6f6f6;
+  font: 24rpx "";
+  color: #000;
+  padding-left: 18rpx;
+  box-sizing: border-box;
+  line-height: 46rpx;
+}
+
+.model .city .box .box_first {
+  display: flex;
+  margin-bottom: 21rpx;
+}
+
+.model .city .box .box_first .one {
+  margin-right: 20rpx;
+}
+
+.model .city .box .adress {
+  width: 300rpx;
+}
+
+.model .sure {
+  height: 58rpx;
+  width: 220rpx;
+  border-radius: 29rpx;
+  background: #39a9ff;
+  font: 24rpx "";
+  color: #fff;
+  margin-top: 41rpx;
+}

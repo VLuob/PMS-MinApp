@@ -1,0 +1,45 @@
+/* pages/SucessShow/sucessshow.wxss */
+
+
+.bg .surface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg .surface .qrcode {
+  height: 310rpx;
+  width: 310rpx;
+  margin: 140rpx auto 0;
+  background:#eee
+}
+
+.bg .surface text {
+  font: 28rpx "";
+  color: #333;
+  font-weight: Bold;
+  font-family: PingFang-SC-Bold;
+}
+
+.bg .surface text:nth-child(2) {
+  margin: 68rpx 0 15rpx;
+}
+
+.bg .surface button {
+  height: 70rpx;
+  width: 360rpx;
+  border-radius: 35rpx;
+  background: #0bbe63;
+  font: 24rpx "";
+  color: #fff;
+  font-weight: Bold;
+  font-family: PingFang-SC-Bold;
+  margin: 80rpx 0 170rpx;
+}
+
+.bg .surface .in {
+  font: 22rpx/2 "";
+  color: #39a9ff;
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+}

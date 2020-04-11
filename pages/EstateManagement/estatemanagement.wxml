@@ -1,0 +1,69 @@
+<!--pages/EstateManagement/estatemanagement.wxml-->
+
+<view class="top" >
+  <view class="box" bindtap="gobackChange" >
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="people">物业信息</view>
+    <view class="modify" bindtap="openChange">
+      <image src="/images/modify.png" />
+    </view>
+    <view class="line"></view>
+    <view class="name">
+      <view>物业名称：{{name||"物业名称"}}</view>
+      <view>所在地：{{region1||"省-市-区/县"}}-{{street ||"街道"}}</view>
+    </view>
+    <view class="btn">
+      <button class="floor" bindtap="floorChange">楼层管理</button>
+      <button class="user" bindtap="userChange">用户管理</button>
+      <button class="user" bindtap="qrcode" style="background:#ed4b57;">生成二维码</button>
+      <view wx:if="{{show}}" class="cavas">
+        <image src="/images/me.png" class="back" />
+        <image src="/images/close.png" style="height:40rpx;width:40rpx;right:50rpx;position:absolute;top:-70rpx;" bindtap="closeChange" />
+        <image style="height:200rpx;width:200rpx;position:absolute;top:167rpx;left:0;right:0;" src="{{img}}" />
+        <text>{{name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="mask" wx:if="{{showModal}}"></view>
+<view class="model" wx:if="{{showModal}}">
+  <form bindsubmit="formsubmit">
+    <view class="title">
+      <text>物业信息</text>
+      <view bindtap="closeChange">
+        <image src="/images/close.png" />
+      </view>
+    </view>
+    <view class="property">
+      <text>物业名称</text>
+      <input placeholder="物业名称" name="name" />
+    </view>
+    <view class="city">
+      <text>所在地</text>
+      <view class="box">
+        <view class="box_first">
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="one input">
+              <text class='select'>{{region[0]}}</text>
+            </view>
+          </picker>
+          <view class="input">
+            <text class='select'>{{region[1]}}</text>
+          </view>
+        </view>
+        <view class="box_first">
+          <view class="one input">
+            <text class='select te'>{{region[2]}}</text>
+          </view>
+          <input placeholder="街道" name="street" />
+        </view>
+        <input class="adress" placeholder="详细地址" name="address" />
+      </view>
+    </view>
+    <button class="sure" form-type="submit">确定</button>
+  </form>
+</view>

@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="main">
+  <image src="/images/logo.png" class="logo" />
+  <view class="identity">请选择您的身份</view>
+  <button class="owner"  bindtap="getScancodeChange">我是业主/访客</button>
+  <view class="guard" bindtap="guardChange">我是保安/门卫</view>
+  <view class="property" bindtap="propertyChange">我是物业</view>
+  <view class="company">
+    <view>技术支持：上海畅客信息科技有限公司</view>
+    <view>热线电话：400-920-2030</view>
+  </view>
+</view>

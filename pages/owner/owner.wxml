@@ -1,0 +1,114 @@
+<!--pages/ovner/owner.wxml-->
+<view class="top">
+  <view class="box" bindtap="gobackChange">
+    <image src="/images/goback.png" class="top_icon" />
+  </view>
+</view>
+<view class="bg">
+  <view class="surface">
+    <view class="people">{{content.title}}</view>
+    <view bindtap='changeLanuage' style="position:absolute;right:50rpx;top:20rpx;height:56rpx;width:96rpx;background:RGBA(9, 190, 102, 1);font-size:24rpx;color:#fff;line-height:56rpx;text-align:center;border-radius:10rpx;">{{content.button}}</view>
+    <view class="line"></view>
+    <view style="margin-left:43rpx;">
+      <form bindsubmit='searchBox'>
+        <view class="name">
+          <text>{{content.name}}</text>
+          <input placeholder="{{content.name}}" class="ipt" type="text" name="name" bindinput="emailInput" />
+        </view>
+        <view class="name">
+          <text>{{content.sex}}</text>
+          <view class="gender">
+            <image src="{{menimg}}" bindtap="menChange" />
+            <view>{{content.male}}</view>
+            <image src="{{womenimg}}" bindtap="womenChange" />
+            <view>{{content.female}}</view>
+          </view>
+        </view>
+        <view class="name">
+          <text decode="{{true}}">{{content.identity}}</text>
+          <picker bindchange="identityChange" range="{{identity}}">
+            <view class="picker" style="position:absolute;left:134rpx;top:237rpx;">
+              {{index}}
+            </view>
+          </picker>
+        </view>
+        <view class="phone">
+          <view class="phonenum">
+            <text>{{content.phoneNumber}}</text>
+            <input placeholder="{{content.phoneNumber}}" type="number" name="phone" />
+          </view>
+          <view class="type" style="margin-left:5rpx;">
+            <text>{{content.idType}}</text>
+            <picker bindchange="typeChange" range="{{typelist}}">
+              <view class="picker" style="position:absolute;right:57rpx;">
+                {{typeval}}
+              </view>
+            </picker>
+            <view>
+            </view>
+          </view>
+        </view>
+        <view class="name">
+          <text>{{content.iDNumber}}</text>
+          <input placeholder="{{content.iDNumber}}" class="iptphone" type="number" name="idcard" />
+        </view>
+        <view class="region">
+          <text>{{content.nationality}}</text>
+          <picker mode="region" bindchange="bindRegionChangef" value="{{region1}}" custom-item="{{customItem}}">
+            <view class="picker">
+              <text class='select'>{{region1[0]}}</text>
+            </view>
+            <view class="picker city">
+              <text class='select'>{{region1[1]}}</text>
+            </view>
+            <view class="picker area">
+              <text class='select'>{{region1[2]}}</text>
+            </view>
+          </picker>
+        </view>
+        <view class="region from">
+          <text>{{content.arrivedFrom}}</text>
+          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="picker">
+              <text class='select'>{{region[0]}}</text>
+            </view>
+            <view class="picker city">
+              <text class='select'>{{region[1]}}</text>
+            </view>
+            <view class="picker area">
+              <text class='select'>{{region[2]}}</text>
+            </view>
+          </picker>
+        </view>
+        <view class="time">
+          <text class="time_txt">{{content.arrivalTime}}</text>
+          <picker mode="date" value="{{date}}" start="2019-09-01" end="2020-09-01" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+        </view>
+        <view class="property">
+          <text class="time_txt">{{content.building}}</text>
+          <input class="picker" placeholder="{{content.building}}" value="{{realEstateName}}" name="realEstateName" />
+        </view>
+        <view class="property adress">
+          <text class="time_txt">{{content.address}}</text>
+          <input class="picker" style="position:absolute;left:94rpx;" placeholder="{{content.unitNumber}}" name="no" />
+          <input placeholder="{{content.roomNumber}}" class="ipt" type="text" name="house" />
+        </view>
+        <view class="pic">
+          <text>{{content.photo}}</text>
+          <view wx:if="{{imgs}}" style="height:120rpx;width:120rpx;" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+            <image class='img' src="{{item}}" data-index="{{index}}" mode="aspectFill">
+              <icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+            </image>
+          </view>
+          <image src="/images/camera.png" class="img" bindtap="chooseImg" wx:if="{{show}}" />
+        </view>
+        <button class="btn" form-type='submit'>{{content.submit}}</button>
+      </form>
+    </view>
+  </view>
+  <!-- changeLanuage -->
+</view>

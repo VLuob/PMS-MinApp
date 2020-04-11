@@ -1,0 +1,38 @@
+/* pages/PropertyInformation/propertyinformation.wxss */
+
+.bg .surface .name {
+  font: 24rpx/2 "";
+  color: #333;
+  font-weight: Bold;
+  font-family: PingFang-SC-Bold;
+  margin: 31rpx 0 0 45rpx;
+}
+
+.bg .surface .img {
+  display: flex;
+}
+
+.bg .surface image {
+  height: 200rpx;
+  width: 200rpx;
+  margin: 124rpx auto 70rpx;
+}
+
+.bg .surface button {
+  height: 70rpx;
+  width: 360rpx;
+  border-radius: 35rpx;
+  background: #0bbe63;
+  font: 26rpx "";
+  color: #fff;
+  letter-spacing: 10 rpx;
+}
+
+.bg .surface .txt {
+  position: absolute;
+  bottom: 120rpx;
+  font: 22rpx/2 "";
+  font-family: PingFang-SC-Medium;
+  font-weight: Medium;
+  left: 30%;
+}
